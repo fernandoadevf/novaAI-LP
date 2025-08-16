@@ -4,11 +4,13 @@ import { GradientTracing } from "@/components/ui/gradient-tracing";
 
 export function LoadingScreen() {
   return (
-    <GradientTracing
-      width={200}
-      height={200}
-      path="M100,0 L75,75 L125,75 L50,200 L100,100 L50,100 L100,0"
-      gradientColors={["#00E0B7", "#00D9A7", "#1a1a2e"]}
-    />
+    <div className="flex items-center justify-center min-h-screen bg-[#1a1a2e]">
+      <div className="relative w-32 h-32">
+        <GradientTracing className="rounded-full" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-8 h-8 border-4 border-[#00E0B7] border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      </div>
+    </div>
   );
 } 
