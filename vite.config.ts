@@ -11,37 +11,22 @@ export default defineConfig({
     },
   },
   build: {
-    // Otimizações de build
     target: 'es2015',
-    minify: 'terser',
+    minify: 'esbuild', // Usar esbuild em vez de terser (mais rápido)
     sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks: {
-          // Separar dependências grandes em chunks
           vendor: ['react', 'react-dom'],
-          motion: ['framer-motion'],
-          icons: ['lucide-react'],
         },
       },
     },
   },
   server: {
-    // Configurações de desenvolvimento
     port: 3000,
     open: true,
   },
   preview: {
     port: 4173,
-  },
-  optimizeDeps: {
-    include: [
-      'react',
-      'react-dom',
-      'framer-motion',
-      'lucide-react',
-      'clsx',
-      'tailwind-merge'
-    ],
   },
 }); 
