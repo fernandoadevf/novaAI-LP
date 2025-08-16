@@ -25,7 +25,7 @@ function Hero() {
   return (
     <div className="w-full bg-[#1a1a2e]">
       <div className="container mx-auto">
-        <div className="flex gap-6 md:gap-12 pt-28 pb-12 md:pt-24 md:pb-16 lg:pt-32 lg:pb-24 items-center justify-center flex-col px-4">
+        <div className="flex gap-4 md:gap-6 lg:gap-12 pt-20 pb-8 sm:pt-24 sm:pb-12 md:pt-28 md:pb-16 lg:pt-32 lg:pb-24 items-center justify-center flex-col px-4">
           
           {/* Primeiro Bloco - Título Principal */}
           <div className="flex gap-4 md:gap-6 flex-col items-center text-center max-w-4xl w-full">
@@ -41,7 +41,7 @@ function Hero() {
               />
             </div>
             
-            <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter font-bold leading-tight">
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter font-bold leading-tight">
               <span className="text-white">Automações</span>
               <span className="relative flex w-full justify-center overflow-hidden text-center md:pb-4 md:pt-1">
                 &nbsp;
@@ -70,7 +70,7 @@ function Hero() {
               <span className="text-white">para sua empresa</span>
             </h1>
 
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed tracking-tight text-gray-300 max-w-3xl px-4 text-center">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed tracking-tight text-gray-300 max-w-3xl px-4 text-center">
               Agência especializada em automações inteligentes para empresas e empreendedores que desejam escalar suas operações com eficiência e liberdade operacional.
             </p>
           </div>
